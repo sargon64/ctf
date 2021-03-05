@@ -4,17 +4,18 @@ import string
 
 def solve(case):
     vel, dis = case.split(":")
-    if vel == 0:
-        print("SAFE")
+
     try:
         time = float(dis) / float(vel)
-    
-    if time <= 1:
-        print("SWERVE")
-    elif time <= 5:
-        print("BREAK")
-    else:
-        print("SAFE")
+    except ZeroDivisionError as err:
+        time = 6
+    finally:
+        if time <= 1:
+            print("SWERVE")
+        elif time <= 5:
+            print("BREAK")
+        else:
+            print("SAFE")
 
 def main():
     cases = int(sys.stdin.readline().rstrip())
