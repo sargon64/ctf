@@ -1,0 +1,9 @@
+#Ghidra Lock File
+#Tue Jan 19 12:56:24 MST 2021
+OS\ Name=Linux
+OS\ Version=5.10.7-arch1-1
+Username=root
+Hostname=Shoc-Arch
+<META>\ Supports\ File\ Channel\ Locking=Channel Lock
+OS\ Architecture=amd64
+Timestamp=1/19/21, 12\:56 PM
